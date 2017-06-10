@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} Next Adveture {% endblock %}
+
+{% block body %}
+<body>
+    <div class="header">
+        <h5>You are Invited To</h5>
+        <h1>My Next Big Adventure</h1>
+        <h5>September 5th 2017 | The Alps</h5>
+    </div>
+    <h3>Join me</h3>
+    <div class="wrapper">
+        <h2>Where to next?</h2>
+        <p></p>
+        <ul class="places">
+            <li>Loading Places</li>
+        </ul>
+        <form class="add-places">
+            <input type="text" name="place" placeholder="So, where are you hiking next?" required>
+            <input type="submit" value="Add PLace">
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename="javascript/script.js") }}"></script>
+</body>
+{% endblock %}

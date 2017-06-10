@@ -1,0 +1,81 @@
+body {
+    box-sizing: border-box;
+    background: url('../images/hiking.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: white;
+}
+
+*, *:before, *:after {box-sizing: inherit; }
+
+a {
+    color: darkslategray;
+    font-weight: 200;
+}
+
+.header h1, h5 {
+    font-weight: 200;
+}
+
+.wrapper {
+    padding: 20px;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px wheat;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+    color: white;
+}
+
+.places {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
+.places li {
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px 0;
+    font-weight: 50;
+    font-size: 30px;
+    display: flex;
+}
+
+.places label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.places input {
+    display: none;
+}
+
+.places input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+}
+
+.places input:checked + label:before {
+    content: '\1F6B5';
+}
+
+.add-places {
+    margin-top: 20px;
+}
+
+.add-places input {
+    color: black;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 40%;
+}
